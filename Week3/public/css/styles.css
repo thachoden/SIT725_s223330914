@@ -1,0 +1,35 @@
+.navbar-size {
+  width: 95%;
+  margin: 0 auto;
+}
+.container {
+  padding-bottom: 40px; /* Adjust the value as needed */
+}
+
+.main-body {
+  overflow: auto; /* contain floated/absolute children */
+  min-height: 100vh; /* at least full viewport height */
+  box-sizing: border-box;
+
+}
+
+.user-image-size {
+  height: 60px;
+  vertical-align: middle;
+}
+.main-body {
+  background-color: #f28487;
+  color: white;
+  height: calc(100vh - 64px);
+}
+.materialboxed-image {
+  margin: 0 auto;
+  height: 400px;
+}
+.card-reveal .card-text {
+  color: #34495e; /* Change reveal paragraph text color */
+}
+.click-me-button {
+  background-color: #ee6e73;
+  margin-top: 50px;
+}
