@@ -3,12 +3,14 @@ const cardList = [
     title: "H.P AND THE PRISONER OF AZKABAN",
     image: "images/book2.jpeg",
     link: "About this book",
+    href: "book2",
     desciption: "Demo desciption about book 2",
   },
   {
     title: "H.P AND THE ORDER OF PHOENIX",
     image: "images/book3.png",
     link: "About this book",
+    href: "book3",
     desciption: "Demo desciption about book 3",
   },
 ];
@@ -36,7 +38,7 @@ const addCards = (items) => {
       '</div><div class="card-content">' +
       '<span class="card-title activator grey-text text-darken-4">' +
       item.title +
-      '<i class="material-icons right">more_vert</i></span><p><a href="#">' +
+      '<i class="material-icons right">more_vert</i></span><p><a href="'+item.href+'">' +
       item.link +
       "</a></p></div>" +
       '<div class="card-reveal">' +
