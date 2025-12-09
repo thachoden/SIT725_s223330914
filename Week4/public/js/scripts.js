@@ -31,7 +31,7 @@ const addCards = (items) => {
       item.title +
       '<i class="material-icons right">close</i></span>' +
       '<p class="card-text">' +
-      item.desciption +
+      item.description +
       "</p>" +
       "</div></div></div>";
     $("#card-section").append(itemToAppend);

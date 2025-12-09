@@ -24,6 +24,13 @@ const Project = mongoose.model("Project", ProjectSchema);
 
 // const cardList = [
 //   {
+//     title: "H.P AND THE PHILOSOPHER'S STONE",
+//     image: "images/book1.jpeg",
+//     link: "About this book",
+//     href: "book1",
+//     description: "Demo desciption about book 1",
+//   },
+//   {
 //     title: "H.P AND THE PRISONER OF AZKABAN",
 //     image: "images/book2.jpeg",
 //     link: "About this book",
@@ -37,6 +44,7 @@ const Project = mongoose.model("Project", ProjectSchema);
 //     href: "book3",
 //     description: "Demo desciption about book 3",
 //   },
+  
 // ];
 
 // const sampleData = (list) => {
