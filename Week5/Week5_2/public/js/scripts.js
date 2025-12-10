@@ -8,7 +8,7 @@ const addBooks = (items) => {
       item.title +
       "</span>" +
       "<p>" +
-      item.summary +
+      item.author +
       "</p>" +
       "</div>" +
       '<div class="card-action">' +
@@ -22,8 +22,8 @@ const addBooks = (items) => {
 };
 const getBooks = async () => {
   try {
-    const response = await fetch('/api/books');
-    
+    const response = await fetch("/api/books");
+
     if (response.ok) {
       const data = await response.json();
       console.log("Books received:", data);
