@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 var port = process.env.port || 3001;
 
-mongoose.connect("mongodb://localhost:27017/myprojectDB");
+mongoose.connect("mongodb://localhost:27017/bookDB");
 mongoose.connection.on("connected", () => {
   console.log("Connected to MongoDB!");
 });
@@ -44,7 +44,6 @@ const Project = mongoose.model("Project", ProjectSchema);
 //     href: "book3",
 //     description: "Demo desciption about book 3",
 //   },
-  
 // ];
 
 // const sampleData = (list) => {
