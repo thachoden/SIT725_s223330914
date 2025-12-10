@@ -4,8 +4,10 @@ const app = express();
 const bookRoutes = require("./routes/book");
 const PORT = 3000;
 
+//Default page
 app.use(express.static(path.join(__dirname, "./public")));
 
+//Route
 app.use("/api/books", bookRoutes);
 
 app.listen(PORT, () => {
