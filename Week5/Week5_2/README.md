@@ -1,8 +1,13 @@
-Task structure
 Week5_2/
-├── services/
-│   └── books.service.js    ← Create this
 ├── controllers/
+│   └── bookController.js
 ├── routes/
+│   └── book.js
 ├── public/
+│   └── js/
+│       └── scripts.js
+│   └── index.html
+├── node_modules/
+├── package.json
+├── package-lock.json
 └── server.js
