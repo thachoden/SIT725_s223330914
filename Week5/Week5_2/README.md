@@ -1,13 +1,17 @@
+```
 Week5_2/
 ├── controllers/
-│   └── bookController.js
+│   └── bookController.js          # Handles book-related requests
 ├── routes/
-│   └── book.js
+│   └── book.js                    # API routes for books
+├── services/
+│   └── books.service.js           # In-memory book data & logic
 ├── public/
+│   ├── index.html                 # Main HTML page
 │   └── js/
-│       └── scripts.js
-│   └── index.html
-├── node_modules/
-├── package.json
-├── package-lock.json
-└── server.js
+│       └── scripts.js             # Client-side JavaScript
+├── node_modules/                  # Dependencies
+├── package.json                   # Project metadata
+├── package-lock.json              # Locked dependencies
+└── server.js                      # Express server entry point
+```
