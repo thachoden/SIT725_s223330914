@@ -20,12 +20,20 @@ const addBooks = (items) => {
     $("#bookList").append(itemToAppend);
   });
 };
-const getBooks = () => {
-  $.get("/api/books", (response) => {
-    if (response.status == 200) {
-      addBooks(response.data);
+const getBooks = async () => {
+  try {
+    const response = await fetch('/api/books');
+    
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Books received:", data);
+      addBooks(data);
+    } else {
+      console.error("Error:", response.status);
     }
-  });
+  } catch (error) {
+    console.error("Fetch error:", error);
+  }
 };
 
 $(document).ready(function () {
