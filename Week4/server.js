@@ -22,43 +22,43 @@ const Project = mongoose.model("Project", ProjectSchema);
 
 //Uncomment and run the following part ONLY ON FIRST RUN.
 
-// const cardList = [
-//   {
-//     title: "H.P AND THE PHILOSOPHER'S STONE",
-//     image: "images/book1.jpeg",
-//     link: "About this book",
-//     href: "book1",
-//     description: "Demo desciption about book 1",
-//   },
-//   {
-//     title: "H.P AND THE PRISONER OF AZKABAN",
-//     image: "images/book2.jpeg",
-//     link: "About this book",
-//     href: "book2",
-//     description: "Demo desciption about book 2",
-//   },
-//   {
-//     title: "H.P AND THE ORDER OF PHOENIX",
-//     image: "images/book3.png",
-//     link: "About this book",
-//     href: "book3",
-//     description: "Demo desciption about book 3",
-//   },
-// ];
+const cardList = [
+  {
+    title: "H.P AND THE PHILOSOPHER'S STONE",
+    image: "images/book1.jpeg",
+    link: "About this book",
+    href: "book1",
+    description: "Demo desciption about book 1",
+  },
+  {
+    title: "H.P AND THE PRISONER OF AZKABAN",
+    image: "images/book2.jpeg",
+    link: "About this book",
+    href: "book2",
+    description: "Demo desciption about book 2",
+  },
+  {
+    title: "H.P AND THE ORDER OF PHOENIX",
+    image: "images/book3.png",
+    link: "About this book",
+    href: "book3",
+    description: "Demo desciption about book 3",
+  },
+];
 
-// const sampleData = (list) => {
-//   list.forEach((item) => {
-//     const sample = new Project({
-//       title : item.title,
-//       image: item.image,
-//       link: item.link,
-//       href: item.href,
-//       description: item.description
-//     })
-//     sample.save().then(() => console.log("Sample project saved!"));
-//   });
-// }
-// sampleData(cardList);
+const sampleData = (list) => {
+  list.forEach((item) => {
+    const sample = new Project({
+      title : item.title,
+      image: item.image,
+      link: item.link,
+      href: item.href,
+      description: item.description
+    })
+    sample.save().then(() => console.log("Sample project saved!"));
+  });
+}
+sampleData(cardList);
 
 app.get("/api/projects", async (req, res) => {
   const projects = await Project.find({});
