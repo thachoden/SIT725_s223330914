@@ -16,7 +16,6 @@ Week5_3/
 │   ├── js/
 │   │   └── scripts.js
 │   └── index.html
-├── node_modules/
 ├── package.json
 ├── package-lock.json
 ├── server.js
