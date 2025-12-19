@@ -1,18 +1,26 @@
 # Task Structure
 ```
-Week5_2/
+Week5_3/
 ├── controllers/
-│   └── bookController.js          # Handles book-related requests
+│   ├── bookController.js
+│   └── index.js
+├── models/
+│   └── book.js
 ├── routes/
-│   └── book.js                    # API routes for books
+│   └── book.js
 ├── services/
-│   └── books.service.js           # In-memory book data & logic
+│   └── bookService.js
 ├── public/
-│   ├── index.html                 # Main HTML page
-│   └── js/
-│       └── scripts.js             # Client-side JavaScript
-├── node_modules/                  # Dependencies
-├── package.json                   # Project metadata
-├── package-lock.json              # Locked dependencies
-└── server.js                      # Express server entry point
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── scripts.js
+│   └── index.html
+├── node_modules/
+├── package.json
+├── package-lock.json
+├── server.js
+├── seed.js
+└── README.md
+
 ```
