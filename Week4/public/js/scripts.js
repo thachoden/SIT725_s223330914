@@ -1,16 +1,3 @@
-const clickMe = () => {
-  alert("Thanks for clicking me. Hope you have a nice day!");
-};
-
-const submitForm = () => {
-  let formData = {};
-  formData.first_name = $("#first_name").val();
-  formData.last_name = $("#last_name").val();
-  formData.password = $("#password").val();
-  formData.email = $("#email").val();
-  console.log("Form Data Submitted: ", formData);
-};
-
 const addCards = (items) => {
   items.forEach((item) => {
     let itemToAppend =
@@ -39,7 +26,7 @@ const addCards = (items) => {
 };
 
 const getProjects = () => {
-  $.get("/api/projects", (response) => {
+  $.get("/api/book", (response) => {
     if (response.statusCode == 200) {
       addCards(response.data);
     }
@@ -48,9 +35,5 @@ const getProjects = () => {
 
 $(document).ready(function () {
   $(".materialboxed").materialbox();
-  $("#formSubmit").click(() => {
-    submitForm();
-  });
   getProjects();
-  $(".modal").modal();
 });
