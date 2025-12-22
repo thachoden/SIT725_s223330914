@@ -50,6 +50,12 @@ npm install
 # Start server
 npm run start
 ```
+### Test running
+
+```bash
+# Start testing script
+node .\test\test.js
+```
 ## 📝 Key Files
 
 ### book.model.js
