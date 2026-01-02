@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('message').value;
     console.log('Captured message:', message);
 
-    // Example: emit the message to the server via socket.io
+    // Emit the message to the server via socket.io
     socket.emit('message', message);
 
     form.reset();
