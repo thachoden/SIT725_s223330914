@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Socket Demo</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  </head>
+  <body>
+    <h4>Connection age:</h4>
+    <div class="" id="number">Waiting...</div>
+    <h4>Send a message to server:</h4>
+    <div class="row">
+      <form id="message-form" class="col s3">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="message" class="materialize-textarea" required></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <button id="submit" class="btn waves-effect waves-light" type="submit">
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
