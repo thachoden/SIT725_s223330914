@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node seed.js && node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "dependencies": {
     "express": "^5.2.1",
